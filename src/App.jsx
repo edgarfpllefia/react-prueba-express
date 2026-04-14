@@ -5,7 +5,7 @@ function App() {
   const [equipos, setEquipos] = useState([]);
 
   async function leerEquipos() {
-    const ruta = "http://localhost:3000/api/equipos";
+    const ruta = "https://react-prueba-express.vercel.app/";
     const equiposJson = await fetch(ruta);
     const equipos = await equiposJson.json();
     setEquipos(equipos.equipos);
