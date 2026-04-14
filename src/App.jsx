@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div key={index}>
       <h1>Equipos</h1>
       <p>{JSON.stringify(equipos)}</p>
     </div>
