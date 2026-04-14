@@ -5,7 +5,7 @@ function App() {
   const [equipos, setEquipos] = useState([]);
 
   async function leerEquipos() {
-    const ruta = "https://prueba-api-express.onrender.com/";
+    const ruta = "https://prueba-api-express.onrender.com/api/equipos";
     const equiposJson = await fetch(ruta);
     const equipos = await equiposJson.json();
     setEquipos(equipos.equipos);
